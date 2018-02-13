@@ -1,6 +1,6 @@
 # Liedenticon
 
-Transform any (16+ char) string into a unique image.
+Transform a string into a unique image.
 
 ## Lidenticons vs Identicons
 
