@@ -22,7 +22,7 @@ document.getElementById("demo-basic").appendChild(span);
 span.outerHTML = new SVG("d6fe8c82fb0abac17a702fd2a94eff37");
 </pre>
                 <script type="module">
-                    import { SVG } from "../flow/index.js";
+                    import { SVG } from "../js/index.js";
                     const span = document.createElement("SVG");
                     document.getElementById("demo-basic").appendChild(span);
                     span.outerHTML = new SVG("d6fe8c82fb0abac17a702fd2a94eff37");
@@ -47,7 +47,7 @@ document.getElementById("demo-options").appendChild(span);
 span.outerHTML = new SVG("46384036044a604b6b3316fc167fc15f", options);
 </pre>
                 <script type="module">
-                    import { SVG } from "../flow/index.js";
+                    import { SVG } from "../js/index.js";
                     const options = {
                         foreground: "#ff0000ff",
                         background: "#000000ff",
@@ -72,7 +72,7 @@ img.src = new SVG("373ff2375be91ebc97501e67d24ccd4d").toString(true);
 document.getElementById("demo-preamble").appendChild(img);
 </pre>
                 <script type="module">
-                    import { SVG } from "../flow/index.js";
+                    import { SVG } from "../js/index.js";
                     const img = document.createElement("IMG");
                     img.src = new SVG("373ff2375be91ebc97501e67d24ccd4d").toString(true);
                     document.getElementById("demo-preamble").appendChild(img);
@@ -90,7 +90,7 @@ img.src = new SVG("001000101000000000000000099fff86").toString(true, true);
 document.getElementById("demo-base64").appendChild(img);
 </pre>
                 <script type="module">
-                    import { SVG } from "../flow/index.js";
+                    import { SVG } from "../js/index.js";
                     const img = document.createElement("IMG");
                     img.src = new SVG("001000101000000000000000099fff86").toString(true, true);
                     document.getElementById("demo-base64").appendChild(img);
@@ -112,7 +112,7 @@ img.src = new PNG("d6fe8c82fb0abac17a702fd2a94eff37");
 document.getElementById("demo-png").appendChild(img);
 </pre>
                 <script type="module">
-                    import { PNG } from "../flow/index.js";
+                    import { PNG } from "../js/index.js";
                     const img = document.createElement("IMG");
                     img.src = new PNG("d6fe8c82fb0abac17a702fd2a94eff37");
                     document.getElementById("demo-png").appendChild(img);
@@ -130,7 +130,7 @@ img.src = `data:image/png;base64,${new PNG("46384036044a604b6b3316fc167fc15f").t
 document.getElementById("demo-png-raw").appendChild(img);
 </pre>
                 <script type="module">
-                    import { PNG } from "../flow/index.js";
+                    import { PNG } from "../js/index.js";
                     const img = document.createElement("IMG");
                     img.src = `data:image/png;base64,${new PNG("46384036044a604b6b3316fc167fc15f").toString(false)}`;
                     document.getElementById("demo-png-raw").appendChild(img);
