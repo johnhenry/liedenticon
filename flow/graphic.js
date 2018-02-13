@@ -77,22 +77,22 @@ export { render };
 type GraphicProps = {
   size: number,
   padding: number,
-  background: number | string | Array<number>,
   saturation: number,
   brightness: number,
-  foreground: ?number | string | Array<number>
+  background: any,
+  foreground: any
 };
 export default class {
   image: any;
   constructor(
     hash: string,
     {
-      size,
-      padding,
-      background,
-      saturation,
-      brightness,
-      foreground
+      size = defaults.size,
+      padding = defaults.padding,
+      saturation = defaults.saturation,
+      brightness = defaults.brightness,
+      background = defaults.background,
+      foreground = defaults.foreground
     }: GraphicProps = defaults
   ) {
     if (typeof hash !== "string" || hash.length < 15) {

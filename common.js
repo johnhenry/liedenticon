@@ -3,22 +3,31 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 //     
-const background = [0, 0, 0, 0];
-const padding = 0;
-const size = 64;
-const saturation = 0.75;
-const brightness = 0.5;
-const foreground = undefined;
+const padding         = 0;
+const size         = 64;
+const saturation         = 0.75;
+const brightness         = 0.5;
+const background                                                     = [
+  0,
+  0,
+  0,
+  0
+];
+const foreground 
+                    
+          
+          
+                  = undefined;
 
 
 
 
 var defaults = Object.freeze({
-	background: background,
 	padding: padding,
 	size: size,
 	saturation: saturation,
 	brightness: brightness,
+	background: background,
 	foreground: foreground
 });
 
@@ -111,12 +120,12 @@ class Graphic {
   constructor(
     hash        ,
     {
-      size: size$$1,
-      padding: padding$$1,
-      background: background$$1,
-      saturation: saturation$$1,
-      brightness: brightness$$1,
-      foreground: foreground$$1
+      size: size$$1 = size,
+      padding: padding$$1 = padding,
+      saturation: saturation$$1 = saturation,
+      brightness: brightness$$1 = brightness,
+      background: background$$1 = background,
+      foreground: foreground$$1 = foreground
     }               = defaults
   ) {
     if (typeof hash !== "string" || hash.length < 15) {

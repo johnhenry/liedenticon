@@ -77,22 +77,22 @@ export { render };
                      
                
                   
-                                              
                      
                      
-                                              
+                  
+                 
   
 export default class {
              
   constructor(
     hash        ,
     {
-      size,
-      padding,
-      background,
-      saturation,
-      brightness,
-      foreground
+      size = defaults.size,
+      padding = defaults.padding,
+      saturation = defaults.saturation,
+      brightness = defaults.brightness,
+      background = defaults.background,
+      foreground = defaults.foreground
     }               = defaults
   ) {
     if (typeof hash !== "string" || hash.length < 15) {
