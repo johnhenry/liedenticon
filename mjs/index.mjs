@@ -15,7 +15,7 @@
  * @description A hash represented as an SVG
  * @param {string} hash - unique string
  * @param {object} options - graphicical options
- * @extends lieticons/graphic
+ * @extends lidenticons/graphic
  * @example
  * import {SVG} from "Liedenticon";
  * const svg = document.createElement("SVG");
@@ -29,7 +29,7 @@ export { default as SVG } from "./svg/index.mjs";
  * @description A hash represented as an PNG
  * @param {string} hash - unique string
  * @param {object} options - graphicical options
- * @extends lieticons/graphic
+ * @extends lidenticons/graphic
  * @example
  * import {PNG} from "Liedenticon";
  * const img = document.createElement("IMG");

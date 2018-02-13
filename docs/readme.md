@@ -87,17 +87,17 @@ const svg = new SVG("...", { padding: "20%" });
 ## Classes
 
 <dl>
-<dt><a href="#SVG">SVG</a> ⇐ <code>lieticons/graphic</code></dt>
+<dt><a href="#SVG">SVG</a> ⇐ <code>lidenticons/graphic</code></dt>
 <dd></dd>
-<dt><a href="#PNG">PNG</a> ⇐ <code>lieticons/graphic</code></dt>
+<dt><a href="#PNG">PNG</a> ⇐ <code>lidenticons/graphic</code></dt>
 <dd></dd>
 </dl>
 
 <a name="SVG"></a>
 
-## SVG ⇐ <code>lieticons/graphic</code>
+## SVG ⇐ <code>lidenticons/graphic</code>
 **Kind**: global class  
-**Extends**: <code>lieticons/graphic</code>  
+**Extends**: <code>lidenticons/graphic</code>  
 <a name="new_SVG_new"></a>
 
 ### new SVG(hash, options)
@@ -118,9 +118,9 @@ svg.outerHTML = new SVG("efb8c90a13f7a1fdc4910");
 ```
 <a name="PNG"></a>
 
-## PNG ⇐ <code>lieticons/graphic</code>
+## PNG ⇐ <code>lidenticons/graphic</code>
 **Kind**: global class  
-**Extends**: <code>lieticons/graphic</code>  
+**Extends**: <code>lidenticons/graphic</code>  
 <a name="new_PNG_new"></a>
 
 ### new PNG(hash, options)

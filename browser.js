@@ -632,7 +632,7 @@ class index$1 extends Graphic {
  * @description A hash represented as an SVG
  * @param {string} hash - unique string
  * @param {object} options - graphicical options
- * @extends lieticons/graphic
+ * @extends lidenticons/graphic
  * @example
  * import {SVG} from "Liedenticon";
  * const svg = document.createElement("SVG");
