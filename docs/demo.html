@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Liedenticon</h1>
+    <div class="container-fluid">
+        <h2>SVG</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Basic Usage (SVG)</h4>
+                <p>Specify just a hash, use default background color, padding, and size. Foreground colors is based on input.</p>
+                <pre id="demo-basic">
+import {SVG} from "Liedenticon";
+const span = document.createElement("SVG");
+document.getElementById("demo-basic").appendChild(span);
+span.outerHTML = new SVG("d6fe8c82fb0abac17a702fd2a94eff37");
+</pre>
+                <script type="module">
+                    import { SVG } from "../flow/index.js";
+                    const span = document.createElement("SVG");
+                    document.getElementById("demo-basic").appendChild(span);
+                    span.outerHTML = new SVG("d6fe8c82fb0abac17a702fd2a94eff37");
+                </script>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Options</h4>
+                <p>Include an options object to customize foreground color, background color, padding, size.</p>
+                <pre id="demo-options">
+import {SVG} from "Liedenticon";
+const options = {
+    foreground: "#ff0000ff",
+    background: "#000000ff",
+    padding: "25%",
+    size: 128
+};
+const span = document.createElement("SVG");
+document.getElementById("demo-options").appendChild(span);
+span.outerHTML = new SVG("46384036044a604b6b3316fc167fc15f", options);
+</pre>
+                <script type="module">
+                    import { SVG } from "../flow/index.js";
+                    const options = {
+                        foreground: "#ff0000ff",
+                        background: "#000000ff",
+                        padding: "25%",
+                        size: 128
+                    };
+                    const span = document.createElement("SVG");
+                    document.getElementById("demo-options").appendChild(span);
+                    span.outerHTML = new SVG("46384036044a604b6b3316fc167fc15f", options);
+                </script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4>As an Image Source</h4>
+                <p>The "toString()" method takes a boolean boolean. When set, it will append a preamble to the string -- useful
+                    when embedding as source for an image.</p>
+                <pre id="demo-preamble">
+import {SVG} from "Liedenticon";
+const img = document.createElement("IMG");
+img.src = new SVG("373ff2375be91ebc97501e67d24ccd4d").toString(true);
+document.getElementById("demo-preamble").appendChild(img);
+</pre>
+                <script type="module">
+                    import { SVG } from "../flow/index.js";
+                    const img = document.createElement("IMG");
+                    img.src = new SVG("373ff2375be91ebc97501e67d24ccd4d").toString(true);
+                    document.getElementById("demo-preamble").appendChild(img);
+                </script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4>As an Image Source (base 64)</h4>
+                <p>When the second parameter to "toString()" is set to true, the output is a base64 string rather than svg text.</p>
+                <pre id="demo-base64">
+import {SVG} from "Liedenticon";
+const img = document.createElement("IMG");
+img.src = new SVG("001000101000000000000000099fff86").toString(true, true);
+document.getElementById("demo-base64").appendChild(img);
+</pre>
+                <script type="module">
+                    import { SVG } from "../flow/index.js";
+                    const img = document.createElement("IMG");
+                    img.src = new SVG("001000101000000000000000099fff86").toString(true, true);
+                    document.getElementById("demo-base64").appendChild(img);
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h2>PNG</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Basic Usage (PNG)</h4>
+                <p>By default, the generated string will have a preamble attached</p>
+                <pre id="demo-png">
+import { PNG } from "Liedenticon";
+const img = document.createElement("IMG");
+img.src = new PNG("d6fe8c82fb0abac17a702fd2a94eff37");
+document.getElementById("demo-png").appendChild(img);
+</pre>
+                <script type="module">
+                    import { PNG } from "../flow/index.js";
+                    const img = document.createElement("IMG");
+                    img.src = new PNG("d6fe8c82fb0abac17a702fd2a94eff37");
+                    document.getElementById("demo-png").appendChild(img);
+                </script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Raw String</h4>
+                <p>Pass "false" into to "toString" to prevent drop preamble.</p>
+                <pre id="demo-png-raw">
+import { PNG } from "Liedenticon";
+const img = document.createElement("IMG");
+img.src = `data:image/png;base64,${new PNG("46384036044a604b6b3316fc167fc15f").toString(false)}`;
+document.getElementById("demo-png-raw").appendChild(img);
+</pre>
+                <script type="module">
+                    import { PNG } from "../flow/index.js";
+                    const img = document.createElement("IMG");
+                    img.src = `data:image/png;base64,${new PNG("46384036044a604b6b3316fc167fc15f").toString(false)}`;
+                    document.getElementById("demo-png-raw").appendChild(img);
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
