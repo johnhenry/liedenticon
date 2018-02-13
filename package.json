@@ -1,6 +1,6 @@
 {
   "name": "liedenticon",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "common.js",
   "directories": {
@@ -8,15 +8,15 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "docs":
-      "jsdoc2md js/index.js > docs/api.md && cat docs/preamble.md docs/intro.md docs/api.md > docs/readme.md",
+    "docs": "jsdoc2md js/index.js > docs/api.md && cat docs/preamble.md docs/intro.md docs/api.md > docs/readme.md",
     "type": "flow-remove-types --out-dir js/ flow/ --sourcemaps",
     "flow": "flow",
     "fix": "echo \"linting temporarliy disabled\" && : ",
-    "rollup":
-      "rollup js/index.js --output.name Liedenticon --output.format iife --output.file ./browser.js && rollup js/index.js --output.format cjs --output.file ./common.js "
+    "rollup": "rollup js/index.js --output.name Liedenticon --output.format iife --output.file ./browser.js && rollup js/index.js --output.format cjs --output.file ./common.js "
   },
-  "keywords": [""],
+  "keywords": [
+    ""
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
