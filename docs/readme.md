@@ -10,9 +10,27 @@ Liedenticon is a ~~ripoff of~~ extension of [Identicon](https://github.com/stewa
 
 Liedenticon separates image generation into two separate classes. One to generate SVGs and another to generate PNGs.
 
+#### Common JS Module
+
 ```javascript
-import { SVG, PNG } from "Lidenticons";
+const {SVG, PNG} = require("lidenticon");
 ```
+
+#### ES6 Module
+
+```javascript
+import { SVG, PNG } from "lidenticon/js";
+```
+
+
+#### ES6 Module
+```html
+<script src="../vendor/lidenticon/browser.js"></script>
+<script>
+  const {SVG, PNG} = window.Liedenticon;
+</script>
+```
+
 
 #### SVG Class
 
