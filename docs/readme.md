@@ -37,13 +37,13 @@ console.log(new SVG("...").toString(true, true)); //logs "data:image/svg+xml;bas
 
 #### PNG ModuClassle
 
-The PNG module will generate a base64 string by default with a pre-amble attached.
+The PNG module will generate a base64 string by default with a preamble attached.
 
 ```javascript
 console.log(new SVG("...")); //logs "data:image/svg+png;base64,..."
 ```
 
-Passing a falsy parameter to "toString" method will drop the pre-amble.
+Passing a falsy parameter to "toString" method will drop the preamble.
 
 ```javascript
 console.log(new SVG("...").toString(false)); //logs "..."
