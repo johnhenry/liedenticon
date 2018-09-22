@@ -51,7 +51,7 @@ console.log(new SVG("...").toString(false)); //logs "..."
 
 #### Future
 
-Both the SVG and PNG modules both inherit from an internal class called Grahic.
+Both the SVG and PNG modules both inherit from an internal class called Graphic.
 It should be easy to extend this object and support other fomats by implementing
 a "renderImage" and a "toString" method.
 
