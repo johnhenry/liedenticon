@@ -2,7 +2,7 @@
 
 Transform a string into a unique image.
 
-## Lidenticons vs Identicons
+## Liedenticons vs Identicons
 
 Liedenticon is a ~~ripoff of~~ extension of [Identicon](https://github.com/stewartlord/identicon.js/tree/master) with a few major differences.
 
@@ -13,19 +13,19 @@ Liedenticon separates image generation into two separate classes. One to generat
 #### Common JS Module
 
 ```javascript
-const {SVG, PNG} = require("lidenticon");
+const {SVG, PNG} = require("liedenticon");
 ```
 
 #### ES6 Module
 
 ```javascript
-import { SVG, PNG } from "lidenticon/js";
+import { SVG, PNG } from "liedenticon/js";
 ```
 
 
 #### ES6 Module
 ```html
-<script src="../vendor/lidenticon/browser.js"></script>
+<script src="../vendor/liedenticon/browser.js"></script>
 <script>
   const {SVG, PNG} = window.Liedenticon;
 </script>
@@ -105,17 +105,17 @@ const svg = new SVG("...", { padding: "20%" });
 ## Classes
 
 <dl>
-<dt><a href="#SVG">SVG</a> ⇐ <code>lidenticons/graphic</code></dt>
+<dt><a href="#SVG">SVG</a> ⇐ <code>liedenticons/graphic</code></dt>
 <dd></dd>
-<dt><a href="#PNG">PNG</a> ⇐ <code>lidenticons/graphic</code></dt>
+<dt><a href="#PNG">PNG</a> ⇐ <code>liedenticons/graphic</code></dt>
 <dd></dd>
 </dl>
 
 <a name="SVG"></a>
 
-## SVG ⇐ <code>lidenticons/graphic</code>
+## SVG ⇐ <code>liedenticons/graphic</code>
 **Kind**: global class  
-**Extends**: <code>lidenticons/graphic</code>  
+**Extends**: <code>liedenticons/graphic</code>  
 <a name="new_SVG_new"></a>
 
 ### new SVG(hash, options)
@@ -136,9 +136,9 @@ svg.outerHTML = new SVG("efb8c90a13f7a1fdc4910");
 ```
 <a name="PNG"></a>
 
-## PNG ⇐ <code>lidenticons/graphic</code>
+## PNG ⇐ <code>liedenticons/graphic</code>
 **Kind**: global class  
-**Extends**: <code>lidenticons/graphic</code>  
+**Extends**: <code>liedenticons/graphic</code>  
 <a name="new_PNG_new"></a>
 
 ### new PNG(hash, options)
