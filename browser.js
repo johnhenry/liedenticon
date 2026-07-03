@@ -127,9 +127,10 @@ class Graphic {
       foreground: foreground$$1 = foreground
     }               = defaults
   ) {
-    if (typeof hash !== "string" || hash.length < 15) {
-      throw "A hash of at least 15 characters is required.";
+    if (typeof hash !== "string") {
+      throw new Error("hash must be a string");
     }
+    hash = hash.padEnd(15, " ");
     if (typeof padding$$1 === "string") {
       const index = padding$$1.indexOf("%");
       if (index > 0) {
