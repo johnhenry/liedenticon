@@ -95,9 +95,10 @@ export default class {
       foreground = defaults.foreground
     }               = defaults
   ) {
-    if (typeof hash !== "string" || hash.length < 15) {
-      throw "A hash of at least 15 characters is required.";
+    if (typeof hash !== "string") {
+      throw new Error("hash must be a string");
     }
+    hash = hash.padEnd(15, " ");
     if (typeof padding === "string") {
       const index = padding.indexOf("%");
       if (index > 0) {
