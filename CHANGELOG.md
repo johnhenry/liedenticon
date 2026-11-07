@@ -1,10 +1,12 @@
 # Changelog
 
-## 0.0.0 — joins the @johnhenry family as `@johnhenry/liedenticon` (2026-11-07)
+## 0.0.0 — joins the @johnhenry family, renamed `@johnhenry/sigil` (2026-11-07)
 
 Previously published as `liedenticon`, last unscoped release 1.0.1. This is
-the first release under the scoped name; the version restarts at 0.0.0 for a
-new address, not because the code is new. Install `@johnhenry/liedenticon`
+the first release under the new name (both the scope and the base name
+changed; the GitHub repo moved from `johnhenry/liedenticon` to
+`johnhenry/sigil`, and the old URL redirects); the version restarts at 0.0.0 for a
+new address, not because the code is new. Install `@johnhenry/sigil`
 instead of `liedenticon`. Everything below landed in #3.
 
 ### Will my existing icons look the same? For hex digests, yes.
@@ -55,14 +57,14 @@ are gone: import `src/index.js`, or load it from a CDN as a module.
 ### Added
 
 - `normalizeHash`, `colorToArray`, `render` and `Graphic` exports, and the
-  `@johnhenry/liedenticon/graphic` subpath for writing new output formats.
+  `@johnhenry/sigil/graphic` subpath for writing new output formats.
 - TypeScript declarations (`index.d.ts`, `graphic.d.ts`).
 - Self-checking examples (`examples/01`–`04`, `npm run examples`).
 - A `LICENSE` file. 1.x had none, and its `package.json` said MIT while the
   code carried identicon.js's and PNGlib's BSD notices. The license is now
   `MIT AND BSD-2-Clause`, with all three notices in `LICENSE`.
 - Documentation at
-  [opensource.johnhenry.me/liedenticon](https://opensource.johnhenry.me/liedenticon/).
+  [opensource.johnhenry.me/sigil](https://opensource.johnhenry.me/sigil/).
 
 ### Changed
 

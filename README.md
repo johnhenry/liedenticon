@@ -1,24 +1,24 @@
-# Liedenticon
+# Sigil
 
-[![npm version](https://img.shields.io/npm/v/%40johnhenry%2Fliedenticon.svg)](https://www.npmjs.com/package/@johnhenry/liedenticon)
-[![CI](https://github.com/johnhenry/liedenticon/actions/workflows/ci.yml/badge.svg)](https://github.com/johnhenry/liedenticon/actions/workflows/ci.yml)
-[![license](https://img.shields.io/npm/l/%40johnhenry%2Fliedenticon.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/%40johnhenry%2Fsigil.svg)](https://www.npmjs.com/package/@johnhenry/sigil)
+[![CI](https://github.com/johnhenry/sigil/actions/workflows/ci.yml/badge.svg)](https://github.com/johnhenry/sigil/actions/workflows/ci.yml)
+[![license](https://img.shields.io/npm/l/%40johnhenry%2Fsigil.svg)](LICENSE)
 
-Full documentation: [opensource.johnhenry.me/liedenticon](https://opensource.johnhenry.me/liedenticon/)
+Full documentation: [opensource.johnhenry.me/sigil](https://opensource.johnhenry.me/sigil/)
 
 Turn any string into a small, symmetric, colored identicon, as SVG markup or a
 PNG. The same string always gives the same image. Zero dependencies, ships as
 plain ES modules, runs in Node and browsers.
 
 ```js
-import { SVG, PNG } from "@johnhenry/liedenticon";
+import { SVG, PNG } from "@johnhenry/sigil";
 
 document.querySelector("#avatar").innerHTML = new SVG("ada@example.com");
 document.querySelector("img").src = new PNG("ada@example.com", { size: 128 });
 ```
 
 > Previously published as `liedenticon` (last unscoped release 1.0.1).
-> Renamed to `@johnhenry/liedenticon` and restarted at 0.0.0 on joining the
+> Renamed to `@johnhenry/sigil` and restarted at 0.0.0 on joining the
 > @johnhenry family: a new address, not a sign of immaturity. Hex hashes
 > render exactly as they did in 1.0.1; see the [CHANGELOG](CHANGELOG.md)
 > for what changed.
@@ -41,7 +41,7 @@ document.querySelector("img").src = new PNG("ada@example.com", { size: 128 });
 ## Install
 
 ```sh
-npm install @johnhenry/liedenticon
+npm install @johnhenry/sigil
 ```
 
 Node 26 or newer. In a browser, import the source straight from a CDN; there is
@@ -49,7 +49,7 @@ no build step:
 
 ```html
 <script type="module">
-  import { SVG } from "https://cdn.jsdelivr.net/npm/@johnhenry/liedenticon/src/index.js";
+  import { SVG } from "https://cdn.jsdelivr.net/npm/@johnhenry/sigil/src/index.js";
 </script>
 ```
 
@@ -75,7 +75,7 @@ string the way that tool does (for example `md5(email)`) and pass the hex.
 ## SVG
 
 ```js
-import { SVG } from "@johnhenry/liedenticon";
+import { SVG } from "@johnhenry/sigil";
 
 const icon = new SVG("ada@example.com", { size: 48 });
 
@@ -91,7 +91,7 @@ icon.toString(true, true);    // "data:image/svg+xml;base64,PHN2Zy…"
 ## PNG
 
 ```js
-import { PNG } from "@johnhenry/liedenticon";
+import { PNG } from "@johnhenry/sigil";
 
 const icon = new PNG("ada@example.com", { size: 128 });
 
@@ -145,7 +145,7 @@ mirrored 5x5 grid and calls your `rectangle` function once per cell. A new
 format implements `renderImage` and `toString`:
 
 ```js
-import Graphic, { render } from "@johnhenry/liedenticon/graphic";
+import Graphic, { render } from "@johnhenry/sigil/graphic";
 
 class Text extends Graphic {
   renderImage(hash, size, padding, background, foreground) {
@@ -185,7 +185,7 @@ version is [examples/04-new-output-format.mjs](examples/04-new-output-format.mjs
 
 ## How it differs from identicon.js
 
-Liedenticon started as an extension of
+Sigil started (as liedenticon) as an extension of
 [identicon.js](https://github.com/stewartlord/identicon.js) and keeps its grid
 and color scheme. It adds:
 
@@ -202,13 +202,13 @@ with `npm run examples`.
 
 ## Family
 
-Liedenticon is a leaf in the @johnhenry family: it doesn't depend on any
+Sigil is a leaf in the @johnhenry family: it doesn't depend on any
 sibling package, and no sibling depends on it. Its output is a plain SVG
 string or a PNG data URI, so it drops into anything that takes markup or an
 image URL.
 
 - **[`johnhenry/lib`](https://github.com/johnhenry/lib)** vendors an older
-  copy of liedenticon as a standalone module. This repository is the
+  copy of this package (as liedenticon) as a standalone module. This repository is the
   canonical source.
 
 ## License

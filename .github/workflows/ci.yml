@@ -13,7 +13,7 @@ jobs:
     with:
       node-versions: '["26"]' # family floor: engines.node >=26.0.0, .nvmrc 26
       os: '["ubuntu-latest"]'
-      # liedenticon has zero dependencies and no committed package-lock.json.
+      # sigil has zero dependencies and no committed package-lock.json.
       install-command: npm install
       node-cache: ""
       gate-commands: |

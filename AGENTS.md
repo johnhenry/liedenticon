@@ -1,6 +1,6 @@
 # Agent playbook
 
-`@johnhenry/liedenticon` turns any string into a symmetric 5x5 identicon, as
+`@johnhenry/sigil` turns any string into a symmetric 5x5 identicon, as
 SVG markup or a PNG. Single package, Node >= 26, zero dependencies, plain ES
 modules shipped as source (no build step: `exports` points straight at
 `src/`), `node --test` (`npm test`).
@@ -21,7 +21,7 @@ CI (`.github/workflows/ci.yml`) runs these in this order; match it locally.
    `strict` and `moduleResolution: nodenext` (there is no tsconfig in the
    repo; use a scratch project that links the package).
 5. A fresh clone:
-   `git clone . /tmp/liedenticon-verifyN && cd $_ && npm install && npm test`.
+   `git clone . /tmp/sigil-verifyN && cd $_ && npm install && npm test`.
 
 ## Repo-specific gotchas
 

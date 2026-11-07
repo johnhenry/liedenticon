@@ -1,6 +1,6 @@
 /**
- * @johnhenry/liedenticon
- * https://github.com/johnhenry/liedenticon
+ * @johnhenry/sigil
+ * https://github.com/johnhenry/sigil
  *
  * Based on identicon.js (Copyright (c) 2017, Stewart Lord) and PNGlib
  * (Copyright (c) 2010, Robert Eisele), both BSD-licensed. See LICENSE.

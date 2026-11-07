@@ -4,7 +4,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { crc32, inflateSync } from "node:zlib";
 import { SVG, PNG, Graphic, render, normalizeHash, colorToArray } from "../src/index.js";
-import GraphicSubpath from "@johnhenry/liedenticon/graphic";
+import GraphicSubpath from "@johnhenry/sigil/graphic";
 import digest from "../src/digest.js";
 import hsl2rgb from "../src/hsl2rgb.js";
 

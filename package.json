@@ -1,5 +1,5 @@
 {
-  "name": "@johnhenry/liedenticon",
+  "name": "@johnhenry/sigil",
   "version": "0.0.0",
   "description": "Deterministic SVG/PNG identicons generated from any string.",
   "type": "module",
@@ -41,12 +41,12 @@
   ],
   "author": "John Henry <john@iamjohnhenry.com>",
   "license": "MIT AND BSD-2-Clause",
-  "homepage": "https://opensource.johnhenry.me/liedenticon/",
+  "homepage": "https://opensource.johnhenry.me/sigil/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnhenry/liedenticon.git"
+    "url": "git+https://github.com/johnhenry/sigil.git"
   },
-  "bugs": "https://github.com/johnhenry/liedenticon/issues",
+  "bugs": "https://github.com/johnhenry/sigil/issues",
   "engines": {
     "node": ">=26.0.0"
   }

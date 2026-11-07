@@ -9,7 +9,7 @@ const encoder = new TextEncoder();
  * (usernames, emails) across the identicon space.
  *
  * The output is part of the public contract. Changing it changes every
- * non-hex identicon, so test/liedenticon.test.mjs pins test vectors.
+ * non-hex identicon, so test/sigil.test.mjs pins test vectors.
  *
  * @param {string} text
  * @returns {string}

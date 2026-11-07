@@ -1,7 +1,7 @@
 // Colors can be hex strings (1-8 digits), numbers or [r, g, b, a] arrays.
 // Padding is a fraction of the size or a percentage string.
 import assert from "node:assert/strict";
-import { SVG, colorToArray } from "@johnhenry/liedenticon";
+import { SVG, colorToArray } from "@johnhenry/sigil";
 
 const svg = String(
   new SVG("ada@example.com", {

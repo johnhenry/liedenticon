@@ -1,7 +1,7 @@
 // Graphic is the base class for every format. Subclass it to render the same
 // mirrored 5x5 grid somewhere else: here, as text.
 import assert from "node:assert/strict";
-import Graphic, { render } from "@johnhenry/liedenticon/graphic";
+import Graphic, { render } from "@johnhenry/sigil/graphic";
 
 class Text extends Graphic {
   renderImage(hash, size, padding, background, foreground) {
