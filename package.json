@@ -1,18 +1,36 @@
 {
-  "name": "liedenticon",
-  "version": "1.0.1",
-  "description": "Deterministic SVG/PNG identicons generated from a hash string.",
-  "main": "common.js",
-  "directories": {
-    "doc": "docs"
+  "name": "@johnhenry/sigil",
+  "version": "0.0.0",
+  "description": "Deterministic SVG/PNG identicons generated from any string.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./graphic": {
+      "types": "./graphic.d.ts",
+      "default": "./src/graphic.js"
+    }
   },
+  "files": [
+    "src/",
+    "index.d.ts",
+    "graphic.d.ts",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
   "scripts": {
     "test": "node --test",
-    "docs": "jsdoc2md js/index.js > docs/api.md && cat docs/preamble.md docs/intro.md docs/api.md > docs/readme.md",
-    "type": "flow-remove-types --out-dir js/ flow/ --sourcemaps",
-    "flow": "flow",
-    "fix": "echo \"linting temporarliy disabled\" && : ",
-    "rollup": "rollup js/index.js --output.name Liedenticon --output.format iife --output.file ./browser.js && rollup js/index.js --output.format cjs --output.file ./common.js "
+    "examples": "for f in examples/0*.mjs; do echo \"== $f ==\" && node \"$f\" || exit 1; done",
+    "example:01": "node examples/01-svg-from-any-string.mjs",
+    "example:02": "node examples/02-png-data-uri.mjs",
+    "example:03": "node examples/03-custom-colors-and-padding.mjs",
+    "example:04": "node examples/04-new-output-format.mjs"
   },
   "keywords": [
     "identicon",
@@ -21,28 +39,15 @@
     "avatar",
     "hash"
   ],
-  "author": "John Henry",
-  "license": "MIT",
-  "homepage": "https://github.com/johnhenry/liedenticon",
+  "author": "John Henry <john@iamjohnhenry.com>",
+  "license": "MIT AND BSD-2-Clause",
+  "homepage": "https://opensource.johnhenry.me/sigil/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnhenry/liedenticon.git"
+    "url": "git+https://github.com/johnhenry/sigil.git"
   },
-  "devDependencies": {
-    "rollup": "^0.55.5",
-    "babel-eslint": "^8.0.2",
-    "babel-plugin-async-import": "^1.0.0-alpha.1",
-    "babel-plugin-transform-async-generator-functions": "^6.24.1",
-    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-3": "^6.24.1",
-    "eslint": "^4.11.0",
-    "eslint-plugin-flowtype": "^2.39.1",
-    "flow-bin": "^0.59.0",
-    "flow-remove-types": "^1.2.3",
-    "git-hooks": "^1.1.9",
-    "jsdoc-to-markdown": "^3.0.1",
-    "tape": "github:johnhenry/tape#v4.9.0"
+  "bugs": "https://github.com/johnhenry/sigil/issues",
+  "engines": {
+    "node": ">=26.0.0"
   }
 }
