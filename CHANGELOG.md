@@ -5,7 +5,7 @@
 Previously published as `liedenticon`, last unscoped release 1.0.1. This is
 the first release under the scoped name; the version restarts at 0.0.0 for a
 new address, not because the code is new. Install `@johnhenry/liedenticon`
-instead of `liedenticon`.
+instead of `liedenticon`. Everything below landed in #3.
 
 ### Will my existing icons look the same? For hex digests, yes.
 
