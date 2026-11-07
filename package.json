@@ -1,13 +1,13 @@
 {
   "name": "liedenticon",
-  "version": "0.0.4",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Deterministic SVG/PNG identicons generated from a hash string.",
   "main": "common.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "node --test",
     "docs": "jsdoc2md js/index.js > docs/api.md && cat docs/preamble.md docs/intro.md docs/api.md > docs/readme.md",
     "type": "flow-remove-types --out-dir js/ flow/ --sourcemaps",
     "flow": "flow",
@@ -15,10 +15,19 @@
     "rollup": "rollup js/index.js --output.name Liedenticon --output.format iife --output.file ./browser.js && rollup js/index.js --output.format cjs --output.file ./common.js "
   },
   "keywords": [
-    ""
+    "identicon",
+    "svg",
+    "png",
+    "avatar",
+    "hash"
   ],
-  "author": "",
+  "author": "John Henry",
   "license": "MIT",
+  "homepage": "https://github.com/johnhenry/liedenticon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnhenry/liedenticon.git"
+  },
   "devDependencies": {
     "rollup": "^0.55.5",
     "babel-eslint": "^8.0.2",
